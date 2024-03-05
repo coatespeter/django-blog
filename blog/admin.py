@@ -9,7 +9,7 @@ class PostAdmin(SummernoteModelAdmin):
     search_fields = ['title']
     list_filter = ('status',)
     prepopulated_fields = {'slug': ('title',)}
-    summernote_fields = ('content',)
+    
 
 # Register your models here.python3 manage.py migrate
 admin.site.register(Comment)
