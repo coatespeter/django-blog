@@ -83,6 +83,9 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+CLOUDINARY_URL = "cloudinary://<api_key>:<api_secret>@<cloud_name>"
+
+
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeanyapp.com",
     "https://*.herokuapp.com"
